@@ -1,0 +1,15 @@
+//creation script
+CREATE DATABASE QontinentWWW;
+
+CREATE TABLE Scen(id smallint unsigned not null auto_increment, 
+		  name varchar(256), 
+		  constraint scen_pk primary key (id));
+
+CREATE TABLE Artist(id int not null auto_increment, 
+		    name varchar(256) not null, 
+		    time bigint not null, 
+		    scenId int, 
+		    PRIMARY KEY (id), 
+		    FOREIGN KEY(scenId) REFERENCES Scen(scenid));
+
+
