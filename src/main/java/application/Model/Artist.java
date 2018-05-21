@@ -14,7 +14,7 @@ public class Artist {
     private int id;
     private String name;
     private long time;
-    private int scenId;
+    private int sceneId;
 
     public int getId() {
         return id;
@@ -40,12 +40,12 @@ public class Artist {
         this.time = time;
     }
 
-    public int getScenId() {
-        return scenId;
+    public int getSceneId() {
+        return sceneId;
     }
 
-    public void setScenId(int scenId) {
-        this.scenId = scenId;
+    public void setSceneId(int scenId) {
+        this.sceneId = scenId;
     }
 
     @Override
@@ -54,7 +54,7 @@ public class Artist {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", time=" + time +
-                ", scenId=" + scenId +
+                ", sceneId=" + sceneId +
                 '}';
     }
 }

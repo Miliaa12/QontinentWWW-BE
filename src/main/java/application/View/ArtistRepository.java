@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface ArtistRepository extends CrudRepository<Artist, Long>
 {
-    Iterable<Artist> findByScenId(int id);
+    Iterable<Artist> findBySceneId(int id);
 }

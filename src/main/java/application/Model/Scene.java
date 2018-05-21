@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Scen
+public class Scene
 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,7 +33,7 @@ public class Scen
 
     @Override
     public String toString() {
-        return "Scen{" +
+        return "Scene{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
